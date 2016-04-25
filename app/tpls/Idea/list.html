@@ -1,0 +1,86 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+
+        
+        <a ui-sref="app.Idea-Create" class="btn btn-info btn-icon btn-icon-standalone btn-lg " ng-click="openModal('modal-1')">
+    <i class="fa-plus"></i>
+    <span> Create New Ad</span>
+</a>
+</br>
+</br>
+
+<section class="gallery-env">
+
+    <div class="row">
+
+        <!-- Gallery Album Optipns and Images -->
+        <div class="col-sm-9 gallery-middle">
+
+            <!-- Album Header -->
+
+
+            <!-- Sorting Information -->
+            <div class="album-sorting-info">
+                <div class="album-sorting-info-inner clearfix">
+                    <a href="" class="btn btn-secondary btn-xs btn-single btn-icon btn-icon-standalone pull-right" data-action="sort">
+                        <i class="fa-save"></i>
+                        <span>Save Current Order</span>
+                    </a>
+
+                    <i class="fa-arrows-alt"></i>
+                    Drag images to sort them
+                </div>
+            </div>
+
+            <!-- Album Images -->
+            <div class="album-images row">
+               <div ng-repeat = "a in data"> 
+           <div class="col-md-4 col-sm-4 col-xs-6">
+                    <div class="album-image">
+                        <a href="" class="thumb" data-action="edit">
+                          <img src="assets/images/{{a.image}}" class="img-responsive" />
+                        </a>
+
+                        <a href="" class="name">
+                            <h4>{{a.description}}</h3>
+                           
+                        <span>{{a.purpose}}</span>
+               </br>
+							 <span>{{a.budget}}</span>
+                </br>
+							 <span>{{a.audience}}</span> </br>
+							 <span>{{a.category}}</span>
+    
+                        </a>
+                        </br>
+                <div>
+                    <button class="btn btn-turquoise">Edit Ad :D</button>
+                    <button class="btn btn-danger">Delete</button>
+                </div>
+
+                        <div class="image-checkbox">
+                            <input type="checkbox" class="cbr" />
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>          
+
+        </div>
+
+        <!-- Gallery Sidebar -->
+
+
+    </div>
+
+</section>
+
+<button class="btn btn-white btn-block">
+				<i class="fa-bars"></i>
+				Load More Images
+</button>
+
+
+
+</div>
+</div>

@@ -1,0 +1,88 @@
+  <style>
+#map {
+	width:50%;
+    height:100%;
+    position:absolute;
+    right:0;
+    top:110px;
+    bottom:-100px;
+	  
+	  }
+.venueBlock .venueDetails .venueScore {
+    float: left;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+}
+.venueScore.neutral {
+    background: #ffc800;
+}
+.venueScore {
+    color: #fff;
+    cursor: default;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: rgba(0,0,0,0.1) 0 -1px 0;
+    width: 30px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+	  
+	  
+  
+    </style>
+
+<div class="row">
+	
+	
+	<div class="col-md-6">
+		
+		<!-- Bordered panel -->
+		<div class="panel panel-default panel-border">
+			<div class="panel-heading">
+Suggestions pour Meilleur aux alentours à proximité de Ariana			</div>
+
+			<div class="panel-body">
+				
+	
+				<div ng-repeat = "c in data">
+			<div class="panel panel-default panel-border">
+			<div class="panel-heading">
+				<img src="{{c.logo}}" class ="img-responsive img-thumbnail" height="75px" width="75px"> <a ui-sref="app.profil({id: {{c._id}}})"> {{c.name}} </a> </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <div class="venueScore neutral" title="" style="background-color:#73CF42;">500</span> 
+			
+			</div>
+			
+			<div class="panel-body">
+
+				{{c.description}}
+<br>
+	<hr>
+				<button class="btn btn-info"> <i class="fa fa-user"></i> <span>Suivre</span></button>
+			</div>
+		</div>
+			
+		</div>
+			
+		</div>
+			
+		
+	
+
+
+
+		
+	</div>
+</div>
+
+
+ </div>
+
+		
+    <div id="map"></div>
+    
+
+

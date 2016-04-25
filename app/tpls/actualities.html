@@ -1,0 +1,112 @@
+<div class="row">
+	<div class="col-sm-2">
+	</div>
+<div class="col-sm-8">
+
+{{data}}
+	
+<div ng-controller="fb">
+	<div ng-repeat ="post in data.data"> 
+			
+			
+	<div class="panel panel-default panel-border">
+			<div class="panel-heading">
+				<img src="https://irs3.4sqi.net/img/general/300x300/24647156_F6J6azXKgac2xCBbbf_l7qywoOHH3BUAj3GduavkoEY.jpg"  class="img-thumbnail" height="75px" width="75px"> <span><a ui-sref="app.profil"> Taraji Store </a> </span>
+				
+				<br> 
+				<h4>
+						
+						<small>From <i class="fa fa-twitter"></i> at 07:00 AM </small> 
+					</h4>
+
+			</div>
+			
+			<div class="panel-body">
+				{{post.message}}
+			 <a> Voir Plus</a>
+				
+				
+				<br> 
+				<br> 
+				
+			<img src="{{post.full_picture}}" class="img-thumbnail" width="100%" height="100%">
+		<div class="xe-widget xe-conversations">
+			<div class="xe-bg-icon">
+				<i class="linecons-comment"></i>
+			</div>
+			<div class="xe-header">
+				
+				<div class="xe-label">
+					<h3>
+						Comments
+						
+					</h3>
+					<br> 
+				<br> 
+			
+					<div class="story-options-links">
+							<a href="">
+								<i class="linecons-heart"></i>
+								Like 
+								<span>(3)</span>
+							</a>
+							
+							<a href="">
+								<i class="linecons-comment"></i>
+								Comments
+								<span>(5)</span>
+							</a>
+						</div>
+	
+				</div>
+				
+			</div>
+			
+			
+			<div class="xe-body">
+									
+				
+				<ul class="list-unstyled">
+					<div ng-repeat ="c in post.comments"> 
+			<li>
+						<div class="xe-comment-entry">
+							<a href="" class="xe-user-img">
+								<img src="{{c.picture}}" class="img-circle" width="40">
+							</a>
+							
+							<div class="xe-comment">
+								<a href="" class="xe-user-name">
+									<strong>{{c.name}}</strong>
+								</a>
+								
+								<p>{{c.message}}</p>
+							</div>
+						</div>
+					</li>
+		
+		</div>
+						
+					
+				</ul>
+				
+			</div>
+			<div class="xe-footer">
+				<a href="">View All</a>
+			</div>
+		</div>	
+		
+		</div>
+		</div>
+
+
+
+</div>
+
+
+	
+</div>
+
+
+<div class="col-sm-2">
+	</div>
+	</div>
